@@ -15,7 +15,87 @@
 }
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: teal; */
+}
+
+.header-container {
+    width: 100vw;
+    height: 5rem;
+    background: white;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease-in-out 1s;
+}
+
+.menu-container {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: 587px;
+    background: #2C2830;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 24px;
+}
+
+.menu-option {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1.36364px;
+    color: #FFFFFF;
+}
+
+.menu-button {
+    border: 1px solid white;
+    background: none;
+    width: 100%;
+    padding: 9px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1.36364px;
+    color: #FFFFFF;
+}
+
+.menu-pattern {
+    position: fixed;
+    bottom: 0;
+}
 
 
+.hero-container {
+    height: 100vh;
+}
+
+
+.hero-img::before {
+    background-image: url('./images/image-intro-mobile.jpg');
+    height: 455px;
+    object-fit: cover;
+    width: 100%;
+    content: '';
+    display: block;
+
+}
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
