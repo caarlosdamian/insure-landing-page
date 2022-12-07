@@ -22,7 +22,13 @@
 }
 
 body {
-    /* background: teal; */
+    /* background: #2D2641; */
+}
+
+main {
+    position: relative;
+    /* width: 100vw; */
+    overflow-x: hidden;
 }
 
 .header-container {
@@ -41,7 +47,7 @@ body {
     top: 80px;
     left: 0;
     width: 100vw;
-    height: 587px;
+    height: 100vh;
     background: #2C2830;
     display: flex;
     align-items: center;
@@ -49,6 +55,7 @@ body {
     flex-direction: column;
     padding: 40px 24px;
     gap: 24px;
+    z-index: 10;
 }
 
 .menu-option {
@@ -63,9 +70,6 @@ body {
 }
 
 .menu-button {
-    border: 1px solid white;
-    background: none;
-    width: 100%;
     padding: 9px;
     font-family: 'Karla';
     font-style: normal;
@@ -87,15 +91,87 @@ body {
     height: 100vh;
 }
 
+.hero-img {
+    background: #2D2641;
+}
 
 .hero-img::before {
     background-image: url('./images/image-intro-mobile.jpg');
-    height: 455px;
+    background-repeat: no-repeat;
+    height: 450px;
     object-fit: cover;
     width: 100%;
     content: '';
     display: block;
 
+}
+
+.hero-content {
+    padding: 93px 24px;
+    background: #2D2641;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-left-img {
+    background: url('./images/bg-pattern-intro-left-mobile.svg') no-repeat;
+    height: 300px;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+.bg-right-img {
+    background: url('./images/bg-pattern-intro-right-mobile.svg') no-repeat;
+    height: 500px;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 887px;
+    right: -250px;
+}
+
+.hero-title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.666667px;
+    color: #FFFFFF;
+    z-index: 3;
+
+}
+
+
+
+.hero-text {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-button {
+    padding: 12px;
+    max-width: 148px;
+}
+
+.button {
+    border: 1px solid white;
+    background: none;
+    width: 100%;
+    color: #FFFFFF;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
