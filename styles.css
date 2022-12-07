@@ -244,4 +244,50 @@ main {
 
 }
 
+.work-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 24px 120px 24px;
+}
+
+.work-wrapper {
+    height: 344px;
+    width: 327px;
+    background: #2D2641;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.work-img {
+    height: 344px;
+    width: 327px;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    z-index: 2;
+    background: url('./images/bg-pattern-how-we-work-mobile.svg') no-repeat;
+}
+
+.work-title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.555556px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.work-button {
+    padding: 12px;
+    width: 160px;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
