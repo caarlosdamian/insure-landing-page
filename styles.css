@@ -88,7 +88,7 @@ main {
 
 
 .hero-container {
-    height: 100vh;
+    height: 100%;
 }
 
 .hero-img {
@@ -172,6 +172,77 @@ main {
     background: none;
     width: 100%;
     color: #FFFFFF;
+}
+
+.features-container {
+    padding: 140px 24px;
+}
+
+.features-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feature-line {
+    height: 1px;
+    width: 150px;
+    background: #F2F2F2;
+    align-self: center;
+  
+}
+
+.feature-header {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.666667px;
+    color: #2C2830;
+    margin-bottom: 40px;
+
+}
+
+
+.feature-img {
+    height: 86px;
+    width: 86px;
+    margin-bottom: 16px;
+}
+
+.feature-title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.388889px;
+    color: #2C2830;
+}
+
+.feature-description {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #837D88;
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
