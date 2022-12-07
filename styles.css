@@ -14,15 +14,10 @@
     --very-light-gray: hsl(0, 0%, 98%);
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    /* background: #2D2641; */
 }
 
 main {
@@ -85,7 +80,6 @@ main {
     position: fixed;
     bottom: 0;
 }
-
 
 .hero-container {
     height: 100%;
@@ -150,8 +144,6 @@ main {
 
 }
 
-
-
 .hero-text {
     font-family: 'Karla';
     font-style: normal;
@@ -200,7 +192,7 @@ main {
     width: 150px;
     background: #F2F2F2;
     align-self: center;
-  
+
 }
 
 .feature-header {
@@ -216,6 +208,13 @@ main {
 
 }
 
+.features-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .feature-img {
     height: 86px;
